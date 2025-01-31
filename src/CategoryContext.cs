@@ -11,9 +11,14 @@ public class CategoryContext : DbContext
     // special "local" folder for your platform.
     protected override void OnConfiguring(DbContextOptionsBuilder options)
         => options.UseNpgsql("Host=db;Database=postgres;Username=postgres;Password=postgres");
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<Category>().ToTable("Category", "category");
+        base.OnModelCreating(modelBuilder);
+    }
 }
 
-[Table("Category", Schema = "category")]
 public class Category
 {
     public int CategoryId { get; set; }
