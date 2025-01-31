@@ -6,7 +6,6 @@ public class BloggingContext : DbContext
 {
     public DbSet<Blog> Blogs { get; set; }
     public DbSet<Post> Posts { get; set; }
-    public DbSet<Category> Categories { get; set; }
 
     // The following configures EF to create a Sqlite database file in the
     // special "local" folder for your platform.

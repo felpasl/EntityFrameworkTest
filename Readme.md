@@ -4,8 +4,11 @@ Este projeto demonstra o uso de Entity Framework Core para gerenciar Migrations 
 
 ## Pré-requisitos
 
-- .NET SDK instalado (versão 6.0 ou superior)
+- .NET SDK instalado (versão 8.0 ou superior)
 - Entity Framework Core instalado
+```bash
+dotnet tool install --global dotnet-ef
+```
 
 ## Estrutura do Projeto
 
