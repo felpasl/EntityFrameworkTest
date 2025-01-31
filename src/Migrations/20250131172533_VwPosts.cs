@@ -11,7 +11,7 @@ namespace EntityTest.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.Sql(@"            
-                CREATE OR REPLACE VIEW public.Posts
+                CREATE OR REPLACE VIEW public.vw_posts
                 AS 
                 select
                     b.""BlogId"" ,
